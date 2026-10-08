@@ -1,0 +1,10 @@
+HOSTELHUB PRO — WINDOWS QUICK START
+
+1. Start Docker Desktop.
+2. Open PowerShell in this folder.
+3. Run: docker compose up --build
+4. Open: http://localhost:8080
+5. Health: http://localhost:8080/actuator/health
+6. Stop: docker compose down
+
+MySQL host port is 3307 to avoid conflicts with local MySQL/XAMPP. Do not change the DB URL inside the app; the container-to-container port remains 3306.

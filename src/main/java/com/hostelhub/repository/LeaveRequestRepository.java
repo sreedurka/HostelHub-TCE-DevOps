@@ -1,0 +1,1 @@
+package com.hostelhub.repository; import com.hostelhub.model.LeaveRequest; import org.springframework.data.jpa.repository.JpaRepository; public interface LeaveRequestRepository extends JpaRepository<LeaveRequest,Long>{long countByStatus(String status);}

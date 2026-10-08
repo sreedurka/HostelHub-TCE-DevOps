@@ -1,0 +1,12 @@
+flowchart LR
+A[Developer] --> B[GitHub]
+B --> C[GitHub Actions]
+C --> D[Maven Tests]
+C --> E[Docker Build]
+E --> F[Artifact Registry]
+F --> G[Cloud Run]
+G --> H[Cloud SQL MySQL]
+G --> I[Cloud Logging]
+G --> J[Cloud Monitoring]
+J --> K[Uptime Check]
+J --> L[Alert]

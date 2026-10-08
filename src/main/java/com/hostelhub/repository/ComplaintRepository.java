@@ -1,0 +1,2 @@
+package com.hostelhub.repository; import com.hostelhub.model.Complaint; import org.springframework.data.jpa.repository.JpaRepository;
+public interface ComplaintRepository extends JpaRepository<Complaint,Long>{long countByStatus(String s);}

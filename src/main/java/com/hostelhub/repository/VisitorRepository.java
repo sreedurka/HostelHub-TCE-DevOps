@@ -1,0 +1,1 @@
+package com.hostelhub.repository; import com.hostelhub.model.Visitor; import org.springframework.data.jpa.repository.JpaRepository; public interface VisitorRepository extends JpaRepository<Visitor,Long>{long countByStatus(String status);}

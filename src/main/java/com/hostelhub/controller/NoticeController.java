@@ -1,0 +1,3 @@
+package com.hostelhub.controller;
+import com.hostelhub.model.Notice; import com.hostelhub.repository.NoticeRepository; import com.hostelhub.service.RealtimeEventService; import org.springframework.web.bind.annotation.*; import jakarta.validation.Valid; import java.util.*;
+@RestController @RequestMapping("/api/notices") public class NoticeController{private final NoticeRepository repo;private final RealtimeEventService events;public NoticeController(NoticeRepository r,RealtimeEventService e){repo=r;events=e;}@GetMapping public List<Notice> all(){return repo.findAll();}@PostMapping public Notice add(@Valid @RequestBody Notice n){Notice x=repo.save(n);events.publish("notice","New notice: "+x.getTitle());return x;}}

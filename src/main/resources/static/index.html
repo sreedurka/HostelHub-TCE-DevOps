@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HostelHub • Smart Hostel Management</title>
+<meta name="description" content="Modern student and warden hostel management portal">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="toastStack" class="toast-stack"></div>
+<div id="loginView" class="login-screen">
+  <div class="login-art"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="art-grid"></div><div class="brand-big"><span>HH</span><div><b>HostelHub</b><small>SMART RESIDENCE PLATFORM</small></div></div><div class="art-copy"><span class="kicker">TCE · MADURAI</span><h1>Hostel life,<br><em>beautifully organised.</em></h1><p>A single digital space for residents, wardens and everyday hostel operations.</p><div class="art-pills"><span>Room & fees</span><span>Gate movement</span><span>Mess & events</span></div></div><div class="art-footer">Secure role-based access <span>•</span> Live operational updates</div></div>
+  <div class="login-panel"><div class="mobile-brand"><span>HH</span><b>HostelHub</b></div><div class="login-heading"><span class="eyebrow">WELCOME BACK</span><h2>Sign in to your portal</h2><p>Choose your workspace to continue.</p></div><div class="role-switch"><button class="role-btn active" data-role="STUDENT"><span>◉</span><div><b>Student</b><small>My hostel life</small></div></button><button class="role-btn" data-role="ADMIN"><span>⌂</span><div><b>Admin / Warden</b><small>Manage hostel</small></div></button></div><form id="loginForm"><label id="identityLabel">Register number<input id="loginIdentity" required placeholder="e.g. CSE001"></label><label>Password<input id="loginPassword" type="password" required placeholder="Enter password"></label><div class="demo-login" id="demoHint">Demo · CSE001 / student123</div><button class="login-submit" type="submit">Enter portal <span>→</span></button></form><div class="login-note"><span>✓</span> Role-based access with secure server validation</div></div>
+</div>
+
+<div id="app" class="app-shell hidden">
+  <aside class="sidebar" id="sidebar"><div class="sidebar-brand"><div class="brand-icon">HH</div><div><b>HostelHub</b><small>SMART RESIDENCE</small></div></div><div class="sidebar-profile"><div class="avatar" id="sideAvatar">AS</div><div><b id="sideName">Resident</b><small id="sideReg">CSE001</small></div><span class="online"></span></div><nav id="sideNav"></nav><div class="sidebar-bottom"><div class="support-card"><span>✦</span><div><b>Hostel office</b><small>9:00 AM – 5:00 PM</small></div></div><button class="logout-btn" id="logoutBtn">↪ <span>Log out</span></button></div></aside>
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+  <main class="main-area"><header class="topbar"><button class="menu-toggle" id="menuToggle">☰</button><div class="breadcrumb"><span id="portalLabel">STUDENT PORTAL</span><b id="pageTitle">Overview</b></div><div class="topbar-actions"><button class="top-icon" id="themeBtn" title="Toggle theme">☼</button><button class="top-icon" id="bellBtn">♢<i id="bellDot"></i></button><div class="user-mini" id="userMini"><div class="avatar tiny" id="miniAvatar">AS</div><div><b id="miniName">Resident</b><small id="miniRole">Student</small></div><span>⌄</span></div><button class="top-logout" id="topLogoutBtn" title="Log out">↪ <span>Log out</span></button></div></header><div id="pageRoot" class="page-root"></div></main>
+</div>
+<div id="modalRoot"></div>
+<script src="/app.js"></script>
+</body>
+</html>

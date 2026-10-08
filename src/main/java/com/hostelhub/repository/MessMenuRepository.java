@@ -1,0 +1,1 @@
+package com.hostelhub.repository; import com.hostelhub.model.MessMenu; import org.springframework.data.jpa.repository.JpaRepository; public interface MessMenuRepository extends JpaRepository<MessMenu,Long>{}
